@@ -38,8 +38,10 @@ header {
 }
 
 .tool-logo {
-    max-height: 12rem;
+    max-height:12rem;
     max-width:12rem;
+    padding-top: 2rem;
+    padding-bottom: 5%;
 }
 
 .tool-title{

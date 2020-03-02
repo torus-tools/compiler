@@ -1,0 +1,59 @@
+
+{
+  "super_easy_forms": {
+    "title":"Super Easy Forms",
+    "description":"An open source serverless form generator",
+    "github":"gkpty/super-easy-forms",
+    "website":"https://supereasyforms.com",
+    "installation":"https://supereasyforms.com/#getting_started"
+  },
+  "super_easy_forms_cli": {
+    "title":"Super Easy Forms CLI",
+    "description":"A complete command line interface for super easy forms. Allows you to deploy both the frontend and backend of your forms with a single command.",
+    "github":"gkpty/super-easy-forms-cli",
+    "website":"https://supereasyforms.com/#sef_cli",
+    "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
+  },
+  "super_easy_docs": {
+    "title":"Torus CMS",
+    "description":"A complete command line interface for super easy forms. Allows you to deploy both the frontend and backend of your forms with a single command.",
+    "github":"gkpty/super-easy-forms-cli",
+    "website":"https://supereasyforms.com/#sef_cli",
+    "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
+  },
+  "easy_md_to_html": {
+    "title":"Torus CMS",
+    "description":"A markdown to html converter with no external dependencies.",
+    "github":"gkpty/super-easy-forms-cli",
+    "website":"https://supereasyforms.com/#sef_cli",
+    "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
+  },
+  "torus_cms": {
+    "title":"Torus CMS",
+    "description":"A complete command line interface for super easy forms. Allows you to deploy both the frontend and backend of your forms with a single command.",
+    "github":"gkpty/super-easy-forms-cli",
+    "website":"https://supereasyforms.com/#sef_cli",
+    "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
+  },
+  "arjan_translate": {
+    "title":"Arjan Translate",
+    "description":"A localization and translation solution for static html websites",
+    "github":"gkpty/super-easy-forms-cli",
+    "website":"https://supereasyforms.com/#sef_cli",
+    "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
+  },
+  "arjan_build": {
+    "title":"Arjan Translate",
+    "description":"A localization and translation solution for static html websites",
+    "github":"gkpty/super-easy-forms-cli",
+    "website":"https://supereasyforms.com/#sef_cli",
+    "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
+  },
+  "arjan_deploy": {
+    "title":"Arjan Translate",
+    "description":"A localization and translation solution for static html websites",
+    "github":"gkpty/super-easy-forms-cli",
+    "website":"https://supereasyforms.com/#sef_cli",
+    "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
+  }
+}
