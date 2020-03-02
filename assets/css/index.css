@@ -23,7 +23,7 @@ section, header {
 }
 
 header {
-    background: url('img/header.png');
+    background: url('../img/header.png');
     background-size: cover;
     height: 20rem;
 }
