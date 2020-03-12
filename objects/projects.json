@@ -35,16 +35,16 @@
     "website":"https://supereasyforms.com/#sef_cli",
     "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
   },
-  "arjan_translate": {
-    "title":"Arjan Translate",
-    "description":"A localization and translation solution for static html websites",
+  "arjan_build": {
+    "title":"Arjan Build",
+    "description":"A two-way templating framework for html that only uses html syntax",
     "github":"gkpty/super-easy-forms-cli",
     "website":"https://supereasyforms.com/#sef_cli",
     "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
   },
-  "arjan_build": {
-    "title":"Arjan Build",
-    "description":"A two-way templating framework for html that only uses html syntax",
+  "arjan_translate": {
+    "title":"Arjan Translate",
+    "description":"A localization and translation solution for static html websites",
     "github":"gkpty/super-easy-forms-cli",
     "website":"https://supereasyforms.com/#sef_cli",
     "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
