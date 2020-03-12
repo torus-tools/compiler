@@ -31,7 +31,14 @@ function replaceObjects(){
             let htmlComp = fs.readFileSync(`components/${comp}.html`, 'utf8')
             let tag = `<#${comp.toUpperCase()}>`
             if(originFile.includes(tag)){
-              originFile = originFile.replace(tag, htmlComp);
+              let start_tag = 
+              `<!-- ${tag} -->
+              `;
+              let end_tag = 
+              `
+              <!-- !${tag} -->`;
+              let htmlCom = start_tag + htmlComp + end_tag; 
+              originFile = originFile.replace(tag, htmlCom);
             }
           }
           
@@ -39,6 +46,12 @@ function replaceObjects(){
           for(let obj of objArray){
             let tag = obj.toUpperCase();
             if(originFile.includes(`<${tag}>`)){
+              let start_tag = 
+              `<!-- <${tag}> -->
+              `;
+              let end_tag = 
+              `
+              <!-- </${tag}> -->`;
               let objTemplate = originFile.split(`<${tag}>`)[1].split(`</${tag}>`)[0];
               let htmlObj = "";
               let rawdata = fs.readFileSync(`objects/${obj}.json`);
@@ -51,14 +64,17 @@ function replaceObjects(){
                   //if the text is between text insert a span tag
                   //insert class toruf-OBJ-VARIABLE in the span tag or the actual tag (if no other text)
                   //add rules to truncate a particular variable if its length is greater than x
+                  
+                  //split template into lines
+                  //if line contains {${key}} split key 
+                  //if line {${key}} split key[0].trim.endsWith('>) || 
                   temp = temp.replace(`{${key}}`, unit[key]);
                 })
-                htmlObj+=temp
+                htmlObj+= temp;
               });
-              //insert comment <!-- toruf-OBJ-start -->
-              //insert comment <!-- toruf-OBJ-end -->
               let oldObj = `<${tag}>`+objTemplate+`</${tag}>`;
-              let newFile = originFile.replace(oldObj, htmlObj);
+              newHtmlObj = start_tag + htmlObj + end_tag; 
+              let newFile = originFile.replace(oldObj, newHtmlObj);
               fs.writeFileSync(`output/${filename}`, newFile)
               console.log('success');
               return 'success';
