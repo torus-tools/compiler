@@ -68,8 +68,29 @@ function replaceObjects(){
                   //split template into lines
                   //if line contains {${key}} split key 
                   //if line {${key}} split key[0].trim.endsWith('>) || 
-                  temp = temp.replace(`{${key}}`, unit[key]);
+                  let temparr = temp.split(`{${key}}`)
+                  if(temparr[0].trim().endsWith('>') || /^[a-zA-Z0-9]/.test(temparr[0].substr(temparr[0].length - 1))){
+                    let newU = `<span class="torufattr_${key}">${unit[key]}</span>`
+                    temp = temp.replace(`{${key}}`, newU);
+                  }
+                  else if(temparr[0].endsWith(`href="`)){
+                    let lastElem = temparr[0].split('<')[temparr[0].split('<').length - 1]
+                    if(lastElem.includes('class=')){
+                      let tempClassArr = temparr[0].split('class="')
+                      let tempClass = tempClassArr[tempClassArr.length - 1]
+                      temp = temp.replace(tempClass+`{${key}}`, `torufhref_${key} `+ tempClass+unit[key]);
+
+                    }
+                    else{
+                      let newClass = `class="torufhref_${key} href="${unit[key]}`
+                      temp = temp.replace(`href="{${key}}`, newClass);
+                      newTempArr = temparr[0].split()
+                    }
+                  }
+                  else temp = temp.replace(`{${key}}`, unit[key]);
                 })
+                let initTemp = temp.split('>')[0]
+                temp = temp.replace(initTemp+'>', initTemp+` id="torufobj_${key}">`)
                 htmlObj+= temp;
               });
               let oldObj = `<${tag}>`+objTemplate+`</${tag}>`;
