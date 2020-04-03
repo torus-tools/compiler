@@ -1,0 +1,58 @@
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #160723;
+    background-image: linear-gradient(to top, hsla(265, 71%, 43%, .1), hsla(34, 100%, 61%, .2)); 
+}
+
+.bg-main {
+    background-color: #160723; 
+}
+
+.text-main {
+    color: #160723;
+}
+
+
+.padding-text
+{padding-top: 20% }
+
+section, header {
+    overflow-x: hidden;
+}
+
+header {
+    background: url('../img/header.png');
+    background-size: cover;
+    height: 20rem;
+}
+
+.bg-sun {
+    background-image: linear-gradient(to top, hsla(265, 71%, 43%, .1), hsla(34, 100%, 61%, .1)); 
+}
+
+.main-title {
+    padding-top: 7rem;
+    font-size: 3.5em;
+}
+
+.tool-logo {
+    max-height:12rem;
+    max-width:12rem;
+    padding-top: 2rem;
+    padding-bottom: 5%;
+}
+
+.tool-title{
+    padding-top: 1rem;
+    color: #efefef;
+}
+
+.tool-text {
+    color: #efefef;
+}
+
+.tool-element {
+    padding-bottom: 5%;
+}
