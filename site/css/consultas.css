@@ -1,13 +1,3 @@
-html, body{
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
-}
-.bg-primary {background-color: #c6c6c6 !important}
-.bg-secondary {background-color: #ddd !important}
-.bg-alternate {background-color: #a8a8a8 !important}
-.text-primary {color: #c6c6c6 !important}
-.text-secondary {color: #ddd !important}
-.text-alternate {color: #a8a8a8 !important}
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }/*absolute center*/
@@ -18,17 +8,17 @@ html, body{
   transform: translate(-50%, -50%);
 }
 
-.modern-container {padding: 10%;}
+.modern-container {padding: 5% 10%;}
 
 @media(min-width: 992px){
-  img {border-radius: 10px 0% 0px 10px;}
-  form {border-radius: 0% 10px 10px 0%;}
+  .modern-container img {border-radius: 10px 0% 0px 10px;}
+  .modern-container form {border-radius: 0% 10px 10px 0%;}
 }
 @media(max-width: 992px){
-  img {border-radius: 10px 10px 0px 0px;}
-  form {border-radius: 0px 0px 10px 10px;}
+  .modern-container img {border-radius: 10px 10px 0px 0px;}
+  .modern-container form {border-radius: 0px 0px 10px 10px;}
 }
-img { 
+.modern-container img { 
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -126,23 +116,3 @@ a:hover:after {
 		margin-top: 40px;
 	}
 }
-html, body{
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
-}
-section {
-  min-height: 50vh;
-}
-.bg-primary {background-color: #c6c6c6 !important}
-.bg-secondary {background-color: #ddd !important}
-.bg-alternate {background-color: #a8a8a8 !important}
-.text-primary {color: #c6c6c6 !important}
-.text-secondary {color: #ddd !important}
-.text-alternate {color: #a8a8a8 !important}html, body{
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
-}
-.bg-primary {background-color: #c6c6c6 !important}
-.bg-secondary {background-color: #ddd !important}
-.bg-alternate {background-color: #a8a8a8 !important}
-.text-primary {color: #c6c6c6 !important}
-.text-secondary {color: #ddd !important}
-.text-alternate {color: #a8a8a8 !important}
