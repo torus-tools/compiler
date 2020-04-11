@@ -1,12 +1,12 @@
 {
   "investigations":{
-    "title":"Investigaciones:",
+    "title":"Investigaciones",
     "description":"Fincas, mercados, sociedades",
     "icon":"fas fa-search",
     "type":"additional"
   },
   "mediation":{
-    "title":"Mediacion y Conciliacion:",
+    "title":"Mediacion y Conciliacion",
     "description":"Contamos con un mediador idoneo para la resolucion de conflictos.",
     "icon":"fas fa-balance-scale",
     "type":"additional"
