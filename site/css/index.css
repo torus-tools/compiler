@@ -1,58 +1,117 @@
-html,body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-color: #160723;
-    background-image: linear-gradient(to top, hsla(265, 71%, 43%, .1), hsla(34, 100%, 61%, .2)); 
+html, body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
 }
+.bg-primary {background-color: #c6c6c6 !important}
+.bg-secondary {background-color: #ddd !important}
+.bg-alternate {background-color: #a8a8a8 !important}
+.text-primary {color: #c6c6c6 !important}
+.text-secondary {color: #ddd !important}
+.text-alternate {color: #a8a8a8 !important}
 
-.bg-main {
-    background-color: #160723; 
-}
-
-.text-main {
-    color: #160723;
-}
-
-
-.padding-text
-{padding-top: 20% }
-
-section, header {
-    overflow-x: hidden;
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}html, body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
 }
 
 header {
-    background: url('../img/header.png');
-    background-size: cover;
-    height: 20rem;
+  height: 100vh;
 }
 
-.bg-sun {
-    background-image: linear-gradient(to top, hsla(265, 71%, 43%, .1), hsla(34, 100%, 61%, .1)); 
+.bg-primary {background-color: #c6c6c6 !important}
+.bg-secondary {background-color: #ddd !important}
+.bg-alternate {background-color: #a8a8a8 !important}
+.text-primary {color: #c6c6c6 !important}
+.text-secondary {color: #ddd !important}
+.text-alternate {color: #a8a8a8 !important}
+
+.main-title-padding {
+  padding-top: 20%;
+  padding-bottom: 3%;
+}html, body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
+}
+section {
+  min-height: 50vh;
+}
+.bg-primary {background-color: #c6c6c6 !important}
+.bg-secondary {background-color: #ddd !important}
+.bg-alternate {background-color: #a8a8a8 !important}
+.text-primary {color: #c6c6c6 !important}
+.text-secondary {color: #ddd !important}
+.text-alternate {color: #a8a8a8 !important}.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
 }
 
-.main-title {
-    padding-top: 7rem;
-    font-size: 3.5em;
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
 }
 
-.tool-logo {
-    max-height:12rem;
-    max-width:12rem;
-    padding-top: 2rem;
-    padding-bottom: 5%;
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
 }
 
-.tool-title{
-    padding-top: 1rem;
-    color: #efefef;
+section {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.tool-text {
-    color: #efefef;
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 100%;
+  height: 100%;
+  background: white;
 }
 
-.tool-element {
-    padding-bottom: 5%;
+.screen-img {
+  width:100%;border:none;height:100%
+}html, body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
 }
+section {
+  min-height: 50vh;
+}
+.bg-primary {background-color: #c6c6c6 !important}
+.bg-secondary {background-color: #ddd !important}
+.bg-alternate {background-color: #a8a8a8 !important}
+.text-primary {color: #c6c6c6 !important}
+.text-secondary {color: #ddd !important}
+.text-alternate {color: #a8a8a8 !important}.circle-img {
+  max-width: 12rem;
+  box-shadow: 0 5px 5px 0 #adb5bd;
+}html, body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
+}
+.bg-primary {background-color: #c6c6c6 !important}
+.bg-secondary {background-color: #ddd !important}
+.bg-alternate {background-color: #a8a8a8 !important}
+.text-primary {color: #c6c6c6 !important}
+.text-secondary {color: #ddd !important}
+.text-alternate {color: #a8a8a8 !important}
