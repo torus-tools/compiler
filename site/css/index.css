@@ -1,11 +1,33 @@
 html, body{
   font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6,nav ul li{
   font-family: 'PT Sans', sans-serif;
 }
 
+.nav-link{
+  color: #FCFAFA !important;
+}
+.bg-translucent {
+  background-color:	hsla(234, 80%, 28%, .2);
+}
+.nav-row{
+  background: transparent;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.nav-row li{
+  margin-left: 12%;
+  list-style-type: none;
+}
+.round-row {
+  border-radius: 0px 0px 7px 7px;
+}
 .background-img {
   background-image: url('../img/drone-city.jpg');
   background-size: cover;
@@ -22,12 +44,14 @@ h1,h2,h3,h4,h5,h6,nav ul li{
 }
 
 
-.bg-primary {background-color: #c6c6c6 !important}
-.bg-secondary {background-color: #ddd !important}
-.bg-alternate {background-color: #a8a8a8 !important}
-.text-primary {color: #c6c6c6 !important}
-.text-secondary {color: #ddd !important}
-.text-alternate {color: #a8a8a8 !important}
+.bg-primary {background-color: #0E197F !important}
+.bg-secondary {background-color: #DBDBDF !important}
+.bg-alternate {background-color: #545F66 !important}
+.bg-light {background-color: #FCFAFA !important}
+.text-primary {color: #0E197F !important}
+.text-secondary {color: #DBDBDF !important}
+.text-alternate {color: #545F66 !important}
+.text-light {color: #FCFAFA !important}
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -35,7 +59,7 @@ h1,h2,h3,h4,h5,h6,nav ul li{
 
 header {
   height: 80vh;
-  background-image: url('../img/drone-city.jpg');
+  background-image: url('../img/drone-city4.jpg');
   background-size: cover;
   position: relative;
 }
@@ -46,8 +70,8 @@ header {
 }
 section {
   min-height: 50vh;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .smartphone {
@@ -101,6 +125,14 @@ section {
 }
 
 .circle-img {
-  max-width: 12rem;
+  border-radius: 100%;
+  width: 12rem;
+  height: 12rem;
   box-shadow: 0 5px 5px 0 #adb5bd;
+}
+
+.circle-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

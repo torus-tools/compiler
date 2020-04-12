@@ -12,21 +12,27 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body id="page-top" class="text-center text-md-left">
-<!-- #NAV_STANDARD -->
-<nav class="navbar navbar-expand-lg px-lg-5 bg-white">
+    
+<!-- #NAV_HOVER -->
+<nav class="navbar navbar-expand-lg px-lg-5 bg-primary">
   <a class="navbar-brand smooth-scroll" href="index.html">
-    <img src="img/logo.svg" width="auto" height="40" alt="">
+    <img src="img/panama-consulta-logo-light.svg" width="auto" height="45" alt="">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-lg fa-bars text-light"></i>
   </button>
-  <div class="collapse navbar-collapse text-alternate" id="mainNav">
+  <div class="collapse navbar-collapse text-light" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="servicios.html/#sobre_nosotros">Sobre Nosotros</a>
+        <a class="nav-link" href="servicios.html#sobre_nosotros">Sobre Nosotros</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="servicios.html">Servicios</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link d-block d-lg-none" href="servicios.html">
+          Servicios
+        </a>
+        <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" onmouseover="displayServices()">
+          Servicios
+        </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="consultas.html">Consultas</a>
@@ -34,16 +40,51 @@
     </ul>
   </div>
 </nav>
-<!-- !NAV_STANDARD -->
+<div class="col-12" id="navRow" style="display: none;" onmouseover="displayServices()" onmouseout="hideServices()">
+  <div class="nav-row px-5">
+    <div class="row round-row bg-translucent p-3">
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4">Asesoria Legal</ul>
+        <li><a href="servicios.html#">Corporativo</a></li>
+        <li><a href="servicios.html#">Maritimo</a></li>
+        <li><a href="servicios.html#">Minero</a></li>
+        <li><a href="servicios.html#">Fiscal</a></li>
+        <li><a href="servicios.html#">Comercial</a></li>
+        <li><a href="servicios.html#">Migratorio y Laboral</a></li>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4">Asesoria Financiera</ul>
+        <li><a href="servicios.html#">Asesor Bancario</a></li>
+        <li><a href="servicios.html#">Asesoria empresarial</a></li>
+        <li><a href="servicios.html#">Patrimonial</a></li>
+        <li><a href="servicios.html#">Asesoria de inversion</a></li>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4">Otros Servicios</ul>
+        <li><a href="servicios.html#">Investigaciones</a></li>
+        <li><a href="servicios.html#">Mediacion y Conciliacion</a></li>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function displayServices(){
+    var x = document.getElementById("navRow");
+    x.style.display = "block";
+  }
+  function hideServices(){
+    var x = document.getElementById("navRow");
+    x.style.display = "none";
+  }
+</script>
+<!-- !NAV_HOVER -->
 
     
 <!-- #HEADER_BG_IMAGE -->
 <header class="bg-primary">
-  <div class="transparency">
-    <div class="contianer text-center">
-      <h1 class="main-title-padding text-alternate">Standard Template</h1>
-      <a href="#" class="btn-lg bg-secondary text-alternate">Click Me</a>
-    </div>
+  <div class="contianer text-center">
+    <h1 class="main-title-padding text-alternate">Standard Template</h1>
+    <a href="#" class="btn-lg bg-secondary text-alternate">Click Me</a>
   </div>
 </header>
 <!-- !HEADER_BG_IMAGE -->
@@ -101,35 +142,69 @@
 <!-- #DYNAMIC_SECTION_ROUND_TEAM -->
 <section>
   <div class="container text-center">
-    <MEMBERS>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <a href="#" data-toggle="modal" data-target="#team-member-{{index}}">
-            <img src="{{img}}" alt="{{name}}" class="mx-auto circle-img">
-            <h2 class="team-member-name">{{team-member-name}}</h2>
+    <div class="row justify-content-center">
+    
+<!-- <TEAM_MEMBERS> -->
+
+        <div class="col-md-6 col-lg-4 col-xl-3" id="torufobj_fernando">
+          <a href="#" data-toggle="modal" class="torufsrc_img torufalt_name torufdata-target_namekey" data-target="#team-member-fernando">
+            <img src="img/img.svg" alt="Fernando Javier Aragon Medina" class="mx-auto circle-img">
+            <h2 class="team-member-name"><span class="torufattr_name">Fernando Javier Aragon Medina</span></h2>
+            <h4 class="team-member-association"><span class="torufattr_association">Socio Fundador</span></h4>
           </a>
-          <p class="attribute">{{education}}</p>
-          <p class="attribute">{{labor}}</p>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{name}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <img src="{{img}}" alt="{{name}}">
-                <h4>{{name}}</h4>
+          <!-- Modal -->
+          <div class="modal fade" id="team-member-{{namekey}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="#team-member-{{namekey}}-label"><span class="torufattr_name">Fernando Javier Aragon Medina</span></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="torufsrc_img modal-body">
+                  <img src="img/img.svg" class="torufalt_name" alt="Fernando Javier Aragon Medina">
+                  <h2 class="team-member-name">{{name}}</h2>
+                  <h4 class="team-member-association"><span class="torufattr_association">Socio Fundador</span></h4>
+                  <h5 class="attribute"><span class="torufattr_education">Universidad Latina</span></p>
+                  <p class="attribute"><span class="torufattr_experience">Laborado en varias firmas y como abogado independiente.</span></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </MEMBERS>
+    
+        <div class="col-md-6 col-lg-4 col-xl-3" id="torufobj_lorey">
+          <a href="#" data-toggle="modal" class="torufsrc_img torufalt_name torufdata-target_namekey" data-target="#team-member-lorey">
+            <img src="img/img.svg" alt="Lorey Aragon Medina" class="mx-auto circle-img">
+            <h2 class="team-member-name"><span class="torufattr_name">Lorey Aragon Medina</span></h2>
+            <h4 class="team-member-association"><span class="torufattr_association">Asesora Financiera</span></h4>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="team-member-{{namekey}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="#team-member-{{namekey}}-label"><span class="torufattr_name">Lorey Aragon Medina</span></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="torufsrc_img modal-body">
+                  <img src="img/img.svg" class="torufalt_name" alt="Lorey Aragon Medina">
+                  <h2 class="team-member-name">{{name}}</h2>
+                  <h4 class="team-member-association"><span class="torufattr_association">Asesora Financiera</span></h4>
+                  <h5 class="attribute"><span class="torufattr_education">Worchester Polytechnic Institute</span></p>
+                  <p class="attribute"><span class="torufattr_experience">Labroado con multinacionales en las industrias de energia y seguros.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+<!-- </TEAM_MEMBERS> -->
+
+    </div>
   </div>
 </section>
 <!-- !DYNAMIC_SECTION_ROUND_TEAM -->
@@ -146,6 +221,7 @@
 </footer>
 <!-- !FOOTER_STANDARD -->
 
+    <script src="https://kit.fontawesome.com/9507dfd244.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>  
   </body>

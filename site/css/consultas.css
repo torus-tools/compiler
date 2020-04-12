@@ -77,13 +77,14 @@ body {
   transition: all 0.2s ease;
   font-weight: bold;
 }
-select {
+.float-label-field select {
   background-color: #fff;
+  margin-top: 3%;
 }
 
 select option {
-   background: transparent !important;
-   border: none !important;
+  background: transparent !important;
+  border: none !important;
 }
 
 .modern-btn {
