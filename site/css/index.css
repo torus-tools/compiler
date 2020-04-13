@@ -1,49 +1,13 @@
 html, body{
   font-family: 'Roboto', sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   width: 100%;
   overflow-x: hidden;
 }
-
 h1,h2,h3,h4,h5,h6,nav ul li{
   font-family: 'PT Sans', sans-serif;
 }
-
-.nav-link{
-  color: #FCFAFA !important;
-}
-.bg-translucent {
-  background-color:	hsla(234, 80%, 28%, .2);
-}
-.nav-row{
-  background: transparent;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-}
-.nav-row li{
-  margin-left: 12%;
-  list-style-type: none;
-}
-.round-row {
-  border-radius: 0px 0px 7px 7px;
-}
-.background-img {
-  background-image: url('../img/drone-city.jpg');
-  background-size: cover;
-  position: relative;
-}
-
-.transparency {
-  background-color: rgba(248, 247, 216, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
+.bg-translucent {background-color:	hsla(234, 80%, 28%, .7)}
 .bg-primary {background-color: #0E197F !important}
 .bg-secondary {background-color: #DBDBDF !important}
 .bg-alternate {background-color: #545F66 !important}
@@ -53,39 +17,65 @@ h1,h2,h3,h4,h5,h6,nav ul li{
 .text-alternate {color: #545F66 !important}
 .text-light {color: #FCFAFA !important}
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.nav-link, .nav-row a{
+  color: #FCFAFA !important;
+}
+.nav-row{
+  background: transparent;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.nav-row li{
+  margin-left: 10%;
+  list-style-type: none;
+}
+.round-row {
+  border-radius: 0px 0px 7px 7px;
 }
 
 header {
-  height: 80vh;
+  height: 75vh;
   background-image: url('../img/drone-city4.jpg');
   background-size: cover;
   position: relative;
 }
-
 .main-title-padding {
-  padding-top: 20%;
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
+.btn-lg {padding: 1rem 2rem;}
+
+section {
+  padding-top: 3%;
   padding-bottom: 3%;
 }
-section {
-  min-height: 50vh;
-  padding-top: 2%;
-  padding-bottom: 2%;
+.background-img {
+  background-image: url('../img/drone-city.jpg');
+  background-size: cover;
+  position: relative;
+}
+.transparency {
+  background-color: rgba(248, 247, 216, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .smartphone {
   position: relative;
-  width: 360px;
-  height: 640px;
+  width: 34vh;
+  min-height: 300px;
+  min-width: 169px;
+  height: 60vh;
   margin: auto;
   border: 16px black solid;
   border-top-width: 60px;
   border-bottom-width: 60px;
-  border-radius: 36px;
+  border-radius: 24px;
 }
-
-/* The horizontal line on the top of the device */
 .smartphone:before {
   content: '';
   display: block;
@@ -98,8 +88,6 @@ section {
   background: #333;
   border-radius: 10px;
 }
-
-/* The circle on the bottom of the device */
 .smartphone:after {
   content: '';
   display: block;
@@ -112,16 +100,21 @@ section {
   background: #333;
   border-radius: 50%;
 }
-
-/* The screen (or content) of the device */
 .smartphone .content {
   width: 100%;
   height: 100%;
   background: white;
 }
-
 .screen-img {
   width:100%;border:none;height:100%
+}
+
+.usage-instructions li{
+  font-size: 17pt;
+  margin-top: 2px;
+}
+.usage-instructions ol{
+  margin: 0px !important;
 }
 
 .circle-img {
