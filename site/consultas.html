@@ -90,36 +90,26 @@
     <div class="col-lg-6 ml-lg-0 pl-lg-0">
       <form class="modern-form">
         <fieldset class='float-label-field'>
-          <label for="txtName">Name</label>
+          <label for="txtName">Nombre Completo</label>
           <input id="txtName" type='text'>
         </fieldset>
         <fieldset class='float-label-field'>
-          <label for="txtEmail" >Email</label>
-          <input id="txtEmail" type='text'>
+          <label for="txtEmail">Correo Electronico</label>
+          <input id="txtEmail" type='email'>
         </fieldset>
         <fieldset class='float-label-field'>
-          <label for="txtPassword">Password</label>
-          <input id="txtPassword" type='password'>
-        </fieldset>
-        <fieldset class='float-label-field'>
-          <label for="txtConfirmPassword">Confirm Password</label>
-          <input id="txtConfirmPassword" type='password'>
-        </fieldset>
-        <fieldset class='float-label-field'>
-          <label for="cars">Options</label>
-          <select id="cars">
+          <label for="consulta_type">Tipo de Consulta</label>
+          <select id="consulta_type">
             <option selected disabled></option>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+            <option value="legal">Legal</option>
+            <option value="Financiera">financiera</option>
           </select>
         </fieldset>
         <fieldset class='float-label-field'>
-          <label for="message">Message</label>
-          <textarea id="message"></textarea>
+          <label for="consulta">Consulta</label>
+          <textarea id="consulta"></textarea>
         </fieldset>
-        <button class="modern-btn btn-success">Send</button>
+        <button class="modern-btn btn-success">Enviar</button>
         </form>
     </div>
   </div>
@@ -127,22 +117,24 @@
 <!-- !FORM_MODERN -->
 
     
-<!-- #STATIC_SECTION_STANDARD -->
+<!-- #STATIC_SECTION_DISCLAIMER -->
 <section class="bg-light">
-  <div class="container text-center">
-    <h2 class="text-alternate h3 pb-2">Una forma mas rapida de obtener tu informacion legal</h2>
-    <p class="text-left">Estar infromado legalmente es un requerimiento basico para poder tomar buenas decisiones, pero el proceso tradicional usualmente resulta bastante tedioso para el cliente. Panama Consulta es un prodcuto de Faragon & Consulting que se creo con el proposito de poder conseguir la informacion legal que el cliente necesite con la minima interaccion posible. Nuestra plataforma online en conjunto con nuestro equipo de profesionales con altos estandares de cumplimiento nos permiten responder tu solicitud en menos de 24 horas a la comodidad de tu correo electronico.
+  <div class="container disclaimer text-center">
+    <ul>
+      <li class="text-left">Como cortesia del lanzamiento de la plataforma atenderemos las primeras consultas gratis</li>
+      <li class="text-left">Si su consulta fue enviada correctamente vera un mensaje de confirmacion y recibira un correo</li>
+    </ul>
   </div>
 </section>
-<!-- !STATIC_SECTION_STANDARD -->
+<!-- !STATIC_SECTION_DISCLAIMER -->
 
     
 <!-- #FOOTER_STANDARD -->
-<footer class="bg-secondary py-md-3">
+<footer class="bg-primary text-light py-md-3">
   <div class="container">
-    <div class="row text-primary">
-      <div class="col-6">yourdomain ©</div>
-      <div class="col-6 text-md-right">powered by <a href="https://bootlib.com">Bootlib</a></div>
+    <div class="row">
+      <div class="col-6">Faragon & Consulting S.A. ©</div>
+      <div class="col-6 text-md-right">powered by <a href="https://torus-digital.com">Torus</a></div>
     </div>
   </div>
 </footer>
