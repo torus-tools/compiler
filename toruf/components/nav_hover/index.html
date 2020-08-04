@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg px-lg-5 bg-primary">
+  <a class="navbar-brand smooth-scroll" href="index.html">
+    <img src="img/panama-consulta-logo-light.svg" width="auto" height="50" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-lg fa-bars text-light"></i>
+  </button>
+  <div class="collapse navbar-collapse text-light" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="servicios.html#sobre_nosotros">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link d-block d-lg-none" href="servicios.html">
+          Servicios
+        </a>
+        <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" onmouseover="displayServices()">
+          Servicios
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="consultas.html">Consultas</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="col-12" id="navRow" style="display: none;" onmouseover="displayServices()" onmouseout="hideServices()">
+  <div class="nav-row px-5">
+    <div class="row round-row bg-translucent p-3">
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Asesoria Legal</ul>
+        <li><a href="servicios.html#"><i class="fas fa-briefcase mr-2"></i>Corporativo</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-ship mr-2"></i>Maritimo</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-snowplow mr-2"></i>Minero</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-gavel mr-2"></i>Fiscal</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-exchange-alt mr-2"></i>Comercial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-plane-arrival mr-2"></i>Migratorio y Laboral</a></li>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Asesoria Financiera</ul>
+        <li><a href="servicios.html#"><i class="fas fa-money-check-alt mr-2"></i>Asesor Bancario</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-building mr-2"></i>Asesoria empresarial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-gem mr-2"></i>Patrimonial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-chart-line mr-2"></i>Asesoria de inversion</a></li>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Otros Servicios</ul>
+        <li><a href="servicios.html#"><i class="fas fa-search mr-2"></i>Investigaciones</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-balance-scale mr-2"></i>Mediacion y Conciliacion</a></li>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function displayServices(){
+    var x = document.getElementById("navRow");
+    x.style.display = "block";
+  }
+  function hideServices(){
+    var x = document.getElementById("navRow");
+    x.style.display = "none";
+  }
+</script>

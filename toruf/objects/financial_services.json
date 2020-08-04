@@ -1,0 +1,26 @@
+{
+  "banking":{
+    "title":"Asesor Bancario",
+    "description":"te asistimos en la obtencion de hipotecas, linea de creditos, prestamos personales, leasing, Factoring, fideicomisos por medio de nuestro servicio de intermediacion financiera donde buscamos la mejor opcion para el cliente  con las mejores tasas para su beneficio.",
+    "icon":"fas fa-money-check-alt",
+    "type":"financial"
+  },
+  "enterprise":{
+    "title":"Asesoria empresarial",
+    "description":"te ofrecemos la mejor estructura corporativa para que tu negocio cuente con el mejor manejo financiero, fiscal y patrimonial con fin de que los socios puedan tener un mayor rendimiento en sus dividendos. Realizamos tambien gestiones de cobranzas de contratos cuentas por cobrar o facturas.",
+    "icon":"fas fa-building",
+    "type":"financial"
+  },
+  "patrimony":{
+    "title":"Patrimonial",
+    "description":"Te asesoramos para proteger tu patrimonio por medio de estructuras legales y financieras para el manejo ideal de tus activos y bienes. Tambien vemos temas sucesorios y herencias.",
+    "icon":"fas fa-gem",
+    "type":"financial"
+  },
+  "investment":{
+    "title":"Asesoria de inversion",
+    "description":"Te asesoramos para que tengas tu cuenta de inversion con un banco de la localidad de forma exitosa facilitando el tramite de debida diligencia y sirviendote como tu asesor de inversion para que hagas la mejor inversion en la bolsa de valores. Tambien manejamos un portafolio de inversiones de proyectos y negocios privados.",
+    "icon":"fas fa-chart-line",
+    "type":"financial"
+  }
+}

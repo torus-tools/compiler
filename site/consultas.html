@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Las consultas online de Panama Consulta son la forma mas conveniente de obtener la informacion legal que necesites en Panama">
+    <meta name="author" content="torus-digital">
+    <title> Panama Consulta - Consultas </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/consultas.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body id="page-top" class="text-center text-md-left">
+    
+<!-- #NAV_HOVER -->
+<nav class="navbar navbar-expand-lg px-lg-5 bg-primary">
+  <a class="navbar-brand smooth-scroll" href="index.html">
+    <img src="img/panama-consulta-logo-light.svg" width="auto" height="50" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-lg fa-bars text-light"></i>
+  </button>
+  <div class="collapse navbar-collapse text-light" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="servicios.html#sobre_nosotros">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link d-block d-lg-none" href="servicios.html">
+          Servicios
+        </a>
+        <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" onmouseover="displayServices()">
+          Servicios
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="consultas.html">Consultas</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="col-12" id="navRow" style="display: none;" onmouseover="displayServices()" onmouseout="hideServices()">
+  <div class="nav-row px-5">
+    <div class="row round-row bg-translucent p-3">
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Asesoria Legal</ul>
+        <li><a href="servicios.html#"><i class="fas fa-briefcase mr-2"></i>Corporativo</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-ship mr-2"></i>Maritimo</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-snowplow mr-2"></i>Minero</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-gavel mr-2"></i>Fiscal</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-exchange-alt mr-2"></i>Comercial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-plane-arrival mr-2"></i>Migratorio y Laboral</a></li>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Asesoria Financiera</ul>
+        <li><a href="servicios.html#"><i class="fas fa-money-check-alt mr-2"></i>Asesor Bancario</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-building mr-2"></i>Asesoria empresarial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-gem mr-2"></i>Patrimonial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-chart-line mr-2"></i>Asesoria de inversion</a></li>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Otros Servicios</ul>
+        <li><a href="servicios.html#"><i class="fas fa-search mr-2"></i>Investigaciones</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-balance-scale mr-2"></i>Mediacion y Conciliacion</a></li>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function displayServices(){
+    var x = document.getElementById("navRow");
+    x.style.display = "block";
+  }
+  function hideServices(){
+    var x = document.getElementById("navRow");
+    x.style.display = "none";
+  }
+</script>
+<!-- !NAV_HOVER -->
+
+    
+<!-- #FORM_MODERN -->
+<div class="modern-container">
+  <div class="row">
+    <div class="col-lg-6 mr-lg-0 pr-lg-0">
+      <img src="img/consultas.jpg" class="modern-img" alt="">
+    </div>
+    <div class="col-lg-6 ml-lg-0 pl-lg-0">
+      <form class="modern-form">
+        <fieldset class='float-label-field'>
+          <label for="txtName">Nombre Completo</label>
+          <input id="txtName" type='text'>
+        </fieldset>
+        <fieldset class='float-label-field'>
+          <label for="txtEmail">Correo Electronico</label>
+          <input id="txtEmail" type='email'>
+        </fieldset>
+        <fieldset class='float-label-field'>
+          <label for="consulta_type">Tipo de Consulta</label>
+          <select id="consulta_type">
+            <option selected disabled></option>
+            <option value="legal">Legal</option>
+            <option value="Financiera">financiera</option>
+          </select>
+        </fieldset>
+        <fieldset class='float-label-field'>
+          <label for="consulta">Consulta</label>
+          <textarea id="consulta"></textarea>
+        </fieldset>
+        <button class="modern-btn btn-success">Enviar</button>
+        </form>
+    </div>
+  </div>
+</div>
+<!-- !FORM_MODERN -->
+
+    
+<!-- #STATIC_SECTION_DISCLAIMER -->
+<section class="bg-light">
+  <div class="container disclaimer text-center">
+    <ul>
+      <li class="text-left">Como cortesia del lanzamiento de la plataforma atenderemos las primeras consultas gratis</li>
+      <li class="text-left">Si su consulta fue enviada correctamente vera un mensaje de confirmacion y recibira un correo</li>
+    </ul>
+  </div>
+</section>
+<!-- !STATIC_SECTION_DISCLAIMER -->
+
+    
+<!-- #FOOTER_STANDARD -->
+<footer class="bg-primary text-light py-md-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">Faragon & Consulting S.A. ©</div>
+      <div class="col-6 text-md-right">powered by <a href="https://torus-digital.com">Torus</a></div>
+    </div>
+  </div>
+</footer>
+<!-- !FOOTER_STANDARD -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="js/form_modern.js"></script>
+  </body>
+</html>
