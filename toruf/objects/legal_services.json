@@ -1,0 +1,38 @@
+{
+  "corporate":{
+    "title":"Corporativo",
+    "description":"le Ofrecemos a su empresa la asesoria personalizada necesaria para que su ente corporativo cuente con  factores esenciales para exito el la finalidad de la persona juridica.",
+    "icon":"fas fa-briefcase",
+    "type":"legal"
+  },
+  "maritime":{
+    "title":"Maritimo",
+    "description":"Asesoramos al naviero,capitan,Dueño de embarcaciones o empresario del sector maritimo en diferentes ambitos desde la marina mercante, adquisicion de embarcaciones,hipotecas navales,  la obtencion de licencias de operaciones y consesiones para llevar a cabo sus operaciones.",
+    "icon":"fas fa-ship",
+    "type":"legal"
+  }, 
+  "mining":{
+    "title":"Minero",
+    "description":"Asesoramos a la empresas mineras que quieres establecer e invertir en el sector minero de Panama  para que cumpla con toda las regulaciones y requisitos que exige la ley. Contamos con un plan de trabajo de 6 meses de retainer.",
+    "icon":"fas fa-snowplow",
+    "type":"legal"
+  },
+  "fiscal":{
+    "title":"Fiscal",
+    "description":"Asesoramos a las personas y empresas que quieran conocer sobre el sistema fiscal en Panama. Brindamos a la vez servicios de contabilidad y  administracion contable. Tambien te asesoramos con las exoneraciones y regimen fiscales para los bienes inmuebles.",
+    "icon":"fas fa-gavel",
+    "type":"legal"
+  },
+  "commercial":{
+    "title":"Comercial",
+    "description":"Le ofrecemos a tu marca, tienda o negocio las herramientas necesarias para surgir en el mercado local ya sea conectandolos con contactos o nuevos proveedores y clientes, asistencia con contratos, registros de marcas, patentes de productos, registros sanitarios, financiamiento con bancos, Inscripcion con AMPYME y otros tramites necesarios para llevar a cabo su operacion comercial de forma exitosa.",
+    "icon":"fas fa-exchange-alt",
+    "type":"legal"
+  },
+  "labor":{
+    "title":"Migratorio y Laboral",
+    "description":"Te asesoramos para cumplas tu sueño de poder vivir y trabajar en Panama de forma legal y puedas conocer de tus derechos laborales como extranjero trabajando en territorio panameño.",
+    "icon":"fas fa-plane-arrival",
+    "type":"legal"
+  }
+}
