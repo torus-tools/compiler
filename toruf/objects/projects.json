@@ -18,6 +18,15 @@
     "website":"https://bootlib.com",
     "installation":"https://supereasyforms.com/#getting_started"
   },
+  "torus_cms": {
+    "title":"Torus CMS",
+    "description":"A complete command line interface for super easy forms. Allows you to deploy both the frontend and backend of your forms with a single command.",
+    "language":"",
+    "license":"",
+    "github":"gkpty/super-easy-forms-cli",
+    "website":"https://supereasyforms.com/#sef_cli",
+    "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
+  },
   "super_easy_forms": {
     "title":"Super Easy Forms",
     "description":"An open source serverless form generator",
@@ -46,7 +55,7 @@
     "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
   },
   "easy_md_to_html": {
-    "title":"Easy MD to HTML",
+    "title":"Easy Markdown to HTML",
     "description":"A markdown to html converter with no external dependencies.",
     "language":"",
     "license":"",
@@ -54,9 +63,9 @@
     "website":"https://supereasyforms.com/#sef_cli",
     "installation":"https://www.npmjs.com/package/super-easy-forms-cli"
   },
-  "torus_cms": {
-    "title":"Torus CMS",
-    "description":"A complete command line interface for super easy forms. Allows you to deploy both the frontend and backend of your forms with a single command.",
+  "easy_object_to_csv": {
+    "title":"Easy Object to CSV",
+    "description":"A markdown to html converter with no external dependencies.",
     "language":"",
     "license":"",
     "github":"gkpty/super-easy-forms-cli",
