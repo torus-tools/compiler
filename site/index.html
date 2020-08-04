@@ -1,410 +1,228 @@
+
 <!DOCTYPE html>
 <html lang="en">
-	<!-- <#HEAD> -->
-            <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="A Free and open source tool that helps you create responsive HTML contact forms in an instant.">
-  <meta name="author" content="Torus Digital">
-
-  <title> Torus Project </title>
-  
-  <!-- Google Fonts -->
-  <!-- Bootstrap 4 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <!-- favicon -->
-  <link rel="icon" href="img/sef-favicon.png">
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="../assets/css/index.css">
-  <link rel="stylesheet" href="../assets/css/flip-card.css">
-</head>
-            <!-- !<#HEAD> -->
-
-	<body id="page-top" class="text-left">
-
-		<!-- <#NAV> -->
-            <nav class="navbar navbar-expand-lg bg-primary px-5">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="../assets/img/toruscms-logo.svg" width="auto" height="60" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fa fa-2x fa-bars"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto navbar-right">
-        <li class="nav-item active">
-          <a class="nav-link smooth-scroll" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#signup">Sign Up</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#tutorials">Tutorials</a>
-        </li>
-      </ul>
-    </div>
+  <head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Las consultas online de Panama Consulta son la forma mas conveniente de obtener la informacion legal que necesites en Panama">
+    <meta name="author" content="torus-digital">
+    <title>Panama Consulta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body id="page-top" class="text-center text-md-left">
+    
+<!-- #NAV_HOVER -->
+<nav class="navbar navbar-expand-lg px-lg-5 bg-primary">
+  <a class="navbar-brand smooth-scroll" href="index.html">
+    <img src="img/panama-consulta-logo-light.svg" width="auto" height="50" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-lg fa-bars text-light"></i>
+  </button>
+  <div class="collapse navbar-collapse text-light" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="servicios.html#sobre_nosotros">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link d-block d-lg-none" href="servicios.html">
+          Servicios
+        </a>
+        <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" onmouseover="displayServices()">
+          Servicios
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="consultas.html">Consultas</a>
+      </li>
+    </ul>
   </div>
 </nav>
-            <!-- !<#NAV> -->
+<div class="col-12" id="navRow" style="display: none;" onmouseover="displayServices()" onmouseout="hideServices()">
+  <div class="nav-row px-5">
+    <div class="row round-row bg-translucent p-3">
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Asesoria Legal</ul>
+        <li><a href="servicios.html#"><i class="fas fa-briefcase mr-2"></i>Corporativo</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-ship mr-2"></i>Maritimo</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-snowplow mr-2"></i>Minero</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-gavel mr-2"></i>Fiscal</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-exchange-alt mr-2"></i>Comercial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-plane-arrival mr-2"></i>Migratorio y Laboral</a></li>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Asesoria Financiera</ul>
+        <li><a href="servicios.html#"><i class="fas fa-money-check-alt mr-2"></i>Asesor Bancario</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-building mr-2"></i>Asesoria empresarial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-gem mr-2"></i>Patrimonial</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-chart-line mr-2"></i>Asesoria de inversion</a></li>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <ul class="h4 text-light">Otros Servicios</ul>
+        <li><a href="servicios.html#"><i class="fas fa-search mr-2"></i>Investigaciones</a></li>
+        <li><a href="servicios.html#"><i class="fas fa-balance-scale mr-2"></i>Mediacion y Conciliacion</a></li>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function displayServices(){
+    var x = document.getElementById("navRow");
+    x.style.display = "block";
+  }
+  function hideServices(){
+    var x = document.getElementById("navRow");
+    x.style.display = "none";
+  }
+</script>
+<!-- !NAV_HOVER -->
 
+    
+<!-- #HEADER_BG_IMAGE -->
+<header class="bg-primary">
+  <div class="contianer text-center">
+    <h1 class="main-title-padding text-primary">Consultas Legales Online en Panama</h1>
+    <a href="consultas.html" class="btn-lg bg-translucent text-light">Consultar</a>
+  </div>
+</header>
+<!-- !HEADER_BG_IMAGE -->
 
-		<header>
-			<div class="container">
-				<div class="row justify-content-center pt-5">
-					<h1 class="main-title text-main">Torus Project</h1>			
-				</div>
-				<div class="row justify-content-center pt-5">
-					<h4>Our mission is to help your open source projects/ideas come to light</h4>			
-				</div>
-			</div>
-		</header>
+    
+<!-- #STATIC_SECTION_STANDARD -->
+<section class="bg-light">
+  <div class="container text-center">
+    <h2 class="text-alternate h3 pb-2">Una forma mas rapida de obtener tu informacion legal</h2>
+    <p class="text-left">Estar infromado legalmente es un requerimiento basico para poder tomar buenas decisiones, pero el proceso tradicional usualmente resulta bastante tedioso para el cliente. Panama Consulta es un prodcuto de Faragon & Consulting que se creo con el proposito de poder conseguir la informacion legal que el cliente necesite con la minima interaccion posible. Nuestra plataforma online en conjunto con nuestro equipo de profesionales con altos estandares de cumplimiento nos permiten responder tu solicitud en menos de 24 horas a la comodidad de tu correo electronico.
+  </div>
+</section>
+<!-- !STATIC_SECTION_STANDARD -->
 
-
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 py-5 text-center text-white-50 padding-text">
-						<h3>Torus Project is an ecosystem of intuitive and fully modular tools for your business needs.</h3>
-						<p>Our microservice based architecture and high tech stack provides us with an advantage allowing us to pass significatn cost savings for our end users.   Users will be able to pay for only what they need.  For example:  You could use Cubera Reservation and add a system channel manager, CRM, RMS ending up with a Full CRS centralized reservation system for your business. Aditionally users will be given the option for customer service, for an additional price.       </p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<section id="projects">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center">
-						<h1 class="text-white">Projects</h1>
-					</div>
-				</div>
-				<div class="row align-items-center">
-
-					<!-- <PROJECTS> -->
-            
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_torus_framework">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">The Torus Framework</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">An open source serverless form generator</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://supereasyforms.com/#getting_started">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_bootlib">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Bootlib</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A bootstrap4 template generator and theme gallery for the torus framework.</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://bootlib.com">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://supereasyforms.com/#getting_started">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_super_easy_forms">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Super Easy Forms</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">An open source serverless form generator</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://supereasyforms.com/#getting_started">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_super_easy_forms_cli">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Super Easy Forms CLI</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A complete command line interface for super easy forms. Allows you to deploy both the frontend and backend of your forms with a single command.</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_super_easy_docs">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Super Easy Docs</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A complete command line interface for super easy forms. Allows you to deploy both the frontend and backend of your forms with a single command.</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_easy_md_to_html">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Easy MD to HTML</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A markdown to html converter with no external dependencies.</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_torus_cms">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Torus CMS</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A complete command line interface for super easy forms. Allows you to deploy both the frontend and backend of your forms with a single command.</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_arjan_workflows">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Arjan Build</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A two-way templating framework for html that only uses html syntax</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_arjan_optimize">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Arjan Build</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A two-way templating framework for html that only uses html syntax</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_arjan_translate">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Arjan Translate</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A localization and translation solution for static html websites</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_arjan_deploy">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Arjan Deploy</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A localization and translation solution for static html websites</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<div class="col-sm-6 col-lg-4 text-center tool-element flip-card" id="torufobj_raspi_led_animation">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="../assets/img/toruscms-logo.svg" class="tool-logo">
-									<h2><span class="torufattr_title">Raspberry Pi Ws1228b led animations</span></h2>
-								</div>
-								<div class="flip-card-back">
-									<p class="p-3"><span class="torufattr_description">A localization and translation solution for static html websites</span></p>
-									<div>
-										<a class="torufhref_website px-2" href="https://supereasyforms.com/#sef_cli">
-											<i class="fas fa-lg fa-globe"></i>
-										</a>
-										<a class="torufhref_github px-2" href="gkpty/super-easy-forms-cli">
-											<i class="fab fa-lg fa-github"></i>
-										</a>
-										<a class="torufhref_installation px-2" href="https://www.npmjs.com/package/super-easy-forms-cli">
-											<i class="fas fa-lg fa-download"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-            <!-- </PROJECTS> -->
-
-				</div>
-			</div>
-		</section>
-
-
-		<!-- <#FOOTER> -->
-            <footer class="bg-main text-center text-white py-4">
+    
+<!-- #STATIC_SECTION_MOBILE_VIDEO -->
+<section class="bg-secondary">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <p class="text-lg-left">Copyright &copy; Torus Project</p>
+      <div class="col-lg-4">
+        <div class="smartphone">
+          <div class="content">
+            <img src="img/img.svg" alt="" style="width:100%;border:none;height:100%;object-fit: cover;">
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6">
-         <p class="text-lg-right">powered by <a href="https://torus-digital.com">Torus</a></p>
+      <div class="col-lg-8">
+        <h2 class="text-primary ml-2 pb-1">Como hacer una consulta</h2>
+        <ol class="usage-instructions">
+          <li>Haga clic en la pestana de consultas</li>
+          <li>llene sus datos, seleccione el tipo de su consulta, y escriba su consulta textualmente</li>
+          <li>haga clic en enviar</li>
+          <li>llena tus datos de pago</li>
+          <li>Haga clic en enviar</li>
+          <li>Espera a ver el mensaje de confirmacion</li>
+          <li>En menos de 24 horas resivira una respuesta de alguno de los profesionales en nuestro equipo en su correo</li>
+        </ol>
       </div>
+    </div>
+  </div>
+</section>
+<!-- !STATIC_SECTION_MOBILE_VIDEO -->
+
+    
+<!-- #STATIC_SECTION_BANNER -->
+<section class="bg-primary py-5">
+  <div class="container text-center">
+    <h5 class="text-light pb-4">Brindamos una variedad de servicios de asesoria personalizada segun las necsidades de nuestros clientes.</h5>
+    <a href="servicios.html" class="btn-lg bg-secondary text-primary">Nuestros Servicios</a>
+  </div>
+</section>
+<!-- !STATIC_SECTION_BANNER -->
+
+    
+<!-- #DYNAMIC_SECTION_ROUND_TEAM -->
+<section>
+  <div class="container text-center">
+    <div class="row justify-content-center">
+    
+<!-- <TEAM_MEMBERS> -->
+
+        <div class="col-md-6 col-lg-4 col-xl-3" id="torufobj_fernando">
+          <a href="#" data-toggle="modal" class="torufsrc_img torufalt_name torufdata-target_namekey" data-target="#team-member-fernando">
+            <img src="img/img.svg" alt="Fernando Javier Aragon Medina" class="mx-auto circle-img">
+            <h2 class="team-member-name"><span class="torufattr_name">Fernando Javier Aragon Medina</span></h2>
+            <h4 class="team-member-association"><span class="torufattr_association">Socio Fundador</span></h4>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="team-member-{{namekey}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="#team-member-{{namekey}}-label"><span class="torufattr_name">Fernando Javier Aragon Medina</span></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="torufsrc_img modal-body">
+                  <img src="img/img.svg" class="torufalt_name" alt="Fernando Javier Aragon Medina">
+                  <h2 class="team-member-name">{{name}}</h2>
+                  <h4 class="team-member-association"><span class="torufattr_association">Socio Fundador</span></h4>
+                  <h5 class="attribute"><span class="torufattr_education">Universidad Latina</span></p>
+                  <p class="attribute"><span class="torufattr_experience">Laborado en varias firmas y como abogado independiente.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-4 col-xl-3" id="torufobj_lorey">
+          <a href="#" data-toggle="modal" class="torufsrc_img torufalt_name torufdata-target_namekey" data-target="#team-member-lorey">
+            <img src="img/img.svg" alt="Lorey Aragon Medina" class="mx-auto circle-img">
+            <h2 class="team-member-name"><span class="torufattr_name">Lorey Aragon Medina</span></h2>
+            <h4 class="team-member-association"><span class="torufattr_association">Asesora Financiera</span></h4>
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="team-member-{{namekey}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="#team-member-{{namekey}}-label"><span class="torufattr_name">Lorey Aragon Medina</span></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="torufsrc_img modal-body">
+                  <img src="img/img.svg" class="torufalt_name" alt="Lorey Aragon Medina">
+                  <h2 class="team-member-name">{{name}}</h2>
+                  <h4 class="team-member-association"><span class="torufattr_association">Asesora Financiera</span></h4>
+                  <h5 class="attribute"><span class="torufattr_education">Worchester Polytechnic Institute</span></p>
+                  <p class="attribute"><span class="torufattr_experience">Labroado con multinacionales en las industrias de energia y seguros.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+<!-- </TEAM_MEMBERS> -->
+
+    </div>
+  </div>
+</section>
+<!-- !DYNAMIC_SECTION_ROUND_TEAM -->
+
+    
+<!-- #FOOTER_STANDARD -->
+<footer class="bg-secondary py-md-3">
+  <div class="container">
+    <div class="row text-primary">
+      <div class="col-6">yourdomain ©</div>
+      <div class="col-6 text-md-right">powered by <a href="https://bootlib.com">Bootlib</a></div>
     </div>
   </div>
 </footer>
-            <!-- !<#FOOTER> -->
+<!-- !FOOTER_STANDARD -->
 
-
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous">
-		</script>
-
-		<script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-
-		
-	</body>
-
+    <script src="https://kit.fontawesome.com/9507dfd244.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>  
+  </body>
 </html>
-
-
-
-
-
-
-		

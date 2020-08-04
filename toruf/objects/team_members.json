@@ -1,0 +1,20 @@
+{
+  "fernando":{
+    "namekey":"fernando",
+    "association":"Socio Fundador",
+    "name":"Fernando Javier Aragon Medina",
+    "title":"Abogado",
+    "education":"Universidad Latina",
+    "experience":"Laborado en varias firmas y como abogado independiente.",
+    "img":"img/img.svg"
+  },
+  "lorey":{
+    "namekey":"lorey",
+    "association":"Asesora Financiera",
+    "name":"Lorey Aragon Medina",
+    "title":"Ingeniera Industrial",
+    "education":"Worchester Polytechnic Institute",
+    "experience":"Labroado con multinacionales en las industrias de energia y seguros.",
+    "img":"img/img.svg"
+  }
+}
